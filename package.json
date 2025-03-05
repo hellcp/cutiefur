@@ -37,6 +37,26 @@
         },
         {
           "type": "raw",
+          "name": "IMAGE_AXOLOTL_1",
+          "file": "axolotl_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_AXOLOTL_3",
+          "file": "axolotl_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_AXOLOTL_4",
+          "file": "axolotl_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_AXOLOTL_5",
+          "file": "axolotl_5.pdc"
+        },
+        {
+          "type": "raw",
           "name": "IMAGE_BEAGLE_1",
           "file": "beagle_1.pdc"
         },
@@ -59,6 +79,31 @@
           "type": "raw",
           "name": "IMAGE_BEAGLE_5",
           "file": "beagle_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BUNNY_1",
+          "file": "bunny_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BUNNY_2",
+          "file": "bunny_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BUNNY_3",
+          "file": "bunny_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BUNNY_4",
+          "file": "bunny_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BUNNY_5",
+          "file": "bunny_5.pdc"
         },
         {
           "type": "raw",

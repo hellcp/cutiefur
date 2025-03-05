@@ -13,8 +13,16 @@
         "label": "Creature",
         "options": [
           {
+            "label": "Axolotl",
+            "value": "10"
+          },
+          {
             "label": "Beagle",
             "value": "0"
+          },
+          {
+            "label": "Bunny",
+            "value": "9"
           },
           {
             "label": "Cow",

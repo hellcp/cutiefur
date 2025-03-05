@@ -2,11 +2,7 @@
 
 #include <pebble.h>
 
-enum {
-  DISPLAY_TEXT = 0,
-  DISPLAY_STEPS = 1,
-  DISPLAY_SLEEP = 2
-};
+enum { DISPLAY_TEXT = 0, DISPLAY_STEPS = 1, DISPLAY_SLEEP = 2 };
 
 enum {
   CREATURE_BEAGLE = 0,
@@ -17,7 +13,9 @@ enum {
   CREATURE_PONY = 5,
   CREATURE_SHARK = 6,
   CREATURE_TABBY = 7,
-  CREATURE_TERRIER = 8
+  CREATURE_TERRIER = 8,
+  CREATURE_BUNNY = 9,
+  CREATURE_AXOLOTL = 10
 };
 
 typedef struct {
@@ -36,4 +34,3 @@ typedef struct {
 
 void config_load(AppConfig *config);
 void config_save(AppConfig *config);
-
