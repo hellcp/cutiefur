@@ -1,0 +1,139 @@
+[
+  {
+    "type": "section",
+    "items": [
+      { 
+        "type": "heading", 
+        "defaultValue": "Creature Customization" 
+      },
+      {
+        "type": "select",
+        "defaultValue": "6",
+        "messageKey": "Creature",
+        "label": "Creature",
+        "options": [
+          {
+            "label": "Beagle",
+            "value": "0"
+          },
+          {
+            "label": "Cow",
+            "value": "1"
+          },
+          {
+            "label": "Fox",
+            "value": "2"
+          },
+          {
+            "label": "Goat",
+            "value": "3"
+          },
+          {
+            "label": "Jerboa",
+            "value": "4"
+          },
+          {
+            "label": "Pony",
+            "value": "5"
+          },
+          {
+            "label": "Shark",
+            "value": "6"
+          },
+          {
+            "label": "Tabby",
+            "value": "7"
+          },
+          {
+            "label": "Terrier",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "defaultValue": "55aaff",
+        "messageKey": "ColorOne",
+        "label": "Body Color",
+        "allowGray": true
+      },
+      {
+        "type": "color",
+        "defaultValue": "ffffff",
+        "messageKey": "ColorTwo",
+        "label": "Accent Color",
+        "allowGray": true
+      },
+      {
+        "type": "color",
+        "defaultValue": "ff55ff",
+        "messageKey": "ColorThree",
+        "label": "Visage Color",
+        "allowGray": true
+      },
+      {
+        "type": "color",
+        "defaultValue": "ffffff",
+        "messageKey": "ColorFour",
+        "label": "Accessory Color",
+        "allowGray": true
+      },
+      {
+        "type": "color",
+        "defaultValue": "000000",
+        "messageKey": "ColorFive",
+        "label": "Eyes Color",
+        "allowGray": true
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      { 
+        "type": "heading", 
+        "defaultValue": "Clockwork Configuration" 
+      },
+      {
+        "type": "color",
+        "defaultValue": "000000",
+        "messageKey": "ColorZero",
+        "label": "Background Color",
+        "allowGray": true
+      },
+      {
+        "type": "select",
+        "defaultValue": "0",
+        "messageKey": "Display",
+        "label": "Text On Tap",
+        "options": [
+          {
+            "label": "Text Below",
+            "value": "0"
+          },
+          {
+            "label": "Steps",
+            "value": "1"
+          },
+          {
+            "label": "Sleep",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "defaultValue": "mewo",
+        "messageKey": "DisplayText",
+        "label": "Text",
+        "attributes": {
+          "limit": 10
+        }
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save Settings"
+  }
+]

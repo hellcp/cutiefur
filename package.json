@@ -1,0 +1,246 @@
+{
+  "name": "CutieFur",
+  "version": "1.0.0",
+  "author": "LCP",
+  "pebble": {
+    "displayName": "CutieFur",
+    "uuid": "21ac3b4b-8b11-4f67-92c6-9845182b086f",
+    "sdkVersion": "3",
+    "projectType": "native",
+    "enableMultiJS": true,
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "ColorZero",
+      "ColorOne",
+      "ColorTwo",
+      "ColorThree",
+      "ColorFour",
+      "ColorFive",
+      "Creature",
+      "Display",
+      "DisplayText"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "menuIcon": true,
+          "name": "IMAGE_MENU_ICON",
+          "file": "cutiefur.png"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BUBBLE",
+          "file": "bubble.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BEAGLE_1",
+          "file": "beagle_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BEAGLE_2",
+          "file": "beagle_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BEAGLE_3",
+          "file": "beagle_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BEAGLE_4",
+          "file": "beagle_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_BEAGLE_5",
+          "file": "beagle_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_COW_1",
+          "file": "cow_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_COW_2",
+          "file": "cow_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_COW_3",
+          "file": "cow_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_COW_4",
+          "file": "cow_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_COW_5",
+          "file": "cow_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_FOX_1",
+          "file": "fox_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_FOX_2",
+          "file": "fox_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_FOX_3",
+          "file": "fox_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_FOX_4",
+          "file": "fox_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_FOX_5",
+          "file": "fox_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_GOAT_1",
+          "file": "goat_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_GOAT_3",
+          "file": "goat_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_GOAT_4",
+          "file": "goat_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_GOAT_5",
+          "file": "goat_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_JERBOA_1",
+          "file": "jerboa_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_JERBOA_2",
+          "file": "jerboa_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_JERBOA_3",
+          "file": "jerboa_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_JERBOA_5",
+          "file": "jerboa_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_PONY_1",
+          "file": "pony_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_PONY_2",
+          "file": "pony_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_PONY_4",
+          "file": "pony_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_PONY_5",
+          "file": "pony_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_SHARK_1",
+          "file": "shark_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_SHARK_2",
+          "file": "shark_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_SHARK_3",
+          "file": "shark_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_SHARK_5",
+          "file": "shark_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TABBY_1",
+          "file": "tabby_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TABBY_2",
+          "file": "tabby_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TABBY_5",
+          "file": "tabby_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TERRIER_1",
+          "file": "terrier_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TERRIER_2",
+          "file": "terrier_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TERRIER_3",
+          "file": "terrier_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TERRIER_4",
+          "file": "terrier_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TERRIER_5",
+          "file": "terrier_5.pdc"
+        }
+      ]
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery"
+    ]
+  },
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  }
+}
