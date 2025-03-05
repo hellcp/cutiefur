@@ -1,6 +1,6 @@
 {
   "name": "CutieFur",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "LCP",
   "pebble": {
     "displayName": "CutieFur",
@@ -194,6 +194,21 @@
           "type": "raw",
           "name": "IMAGE_JERBOA_5",
           "file": "jerboa_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_LOBSTER_1",
+          "file": "lobster_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_LOBSTER_2",
+          "file": "lobster_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_LOBSTER_5",
+          "file": "lobster_5.pdc"
         },
         {
           "type": "raw",
