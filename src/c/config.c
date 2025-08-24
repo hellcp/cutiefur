@@ -72,6 +72,7 @@ void config_save(AppConfig *config) {
   persist_write_int(MESSAGE_KEY_ColorFive, config->color_5.argb);
   persist_write_int(MESSAGE_KEY_Creature, config->creature);
   persist_write_int(MESSAGE_KEY_Display, config->display);
+  persist_write_int(MESSAGE_KEY_DisplayState, config->display_state);
   persist_write_string(MESSAGE_KEY_DisplayText, config->display_text);
 }
 
