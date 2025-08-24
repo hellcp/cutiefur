@@ -20,7 +20,9 @@
       "ColorFive",
       "Creature",
       "Display",
-      "DisplayText"
+      "DisplayText",
+      "DisplayState",
+      "DateFormat"
     ],
     "resources": {
       "media": [
@@ -172,6 +174,31 @@
         },
         {
           "type": "raw",
+          "name": "IMAGE_HEDGEHOG_1",
+          "file": "hedgehog_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_HEDGEHOG_2",
+          "file": "hedgehog_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_HEDGEHOG_3",
+          "file": "hedgehog_3.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_HEDGEHOG_4",
+          "file": "hedgehog_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_HEDGEHOG_5",
+          "file": "hedgehog_5.pdc"
+        },
+        {
+          "type": "raw",
           "name": "IMAGE_GOAT_5",
           "file": "goat_5.pdc"
         },
@@ -289,6 +316,26 @@
           "type": "raw",
           "name": "IMAGE_TERRIER_5",
           "file": "terrier_5.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TURTLE_1",
+          "file": "turtle_1.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TURTLE_2",
+          "file": "turtle_2.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TURTLE_4",
+          "file": "turtle_4.pdc"
+        },
+        {
+          "type": "raw",
+          "name": "IMAGE_TURTLE_5",
+          "file": "turtle_5.pdc"
         }
       ]
     },

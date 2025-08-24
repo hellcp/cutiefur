@@ -37,6 +37,10 @@
             "value": "3"
           },
           {
+            "label": "Hedgehog",
+            "value": "12"
+          },
+          {
             "label": "Jerboa",
             "value": "4"
           },
@@ -59,6 +63,10 @@
           {
             "label": "Terrier",
             "value": "8"
+          },
+          {
+            "label": "Turtle",
+            "value": "13"
           }
         ]
       },
@@ -115,9 +123,45 @@
       },
       {
         "type": "select",
+        "defaultValue": "%m/%d",
+        "messageKey": "DateFormat",
+        "label": "Date Format",
+        "options": [
+          {
+            "label": "MM/DD",
+            "value": "%m/%d"
+          },
+          {
+            "label": "DD.MM",
+            "value": "%d.%m"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "defaultValue": "0",
+        "messageKey": "DisplayState",
+        "label": "Bubble",
+        "options": [
+          {
+            "label": "Show on tap",
+            "value": "0"
+          },
+          {
+            "label": "Always show",
+            "value": "1"
+          },
+          {
+            "label": "Never show",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "type": "select",
         "defaultValue": "0",
         "messageKey": "Display",
-        "label": "Text On Tap",
+        "label": "Text in the Bubble",
         "options": [
           {
             "label": "Text Below",
@@ -135,7 +179,7 @@
       },
       {
         "type": "input",
-        "defaultValue": "mewo",
+        "defaultValue": "RAWR",
         "messageKey": "DisplayText",
         "label": "Text",
         "attributes": {

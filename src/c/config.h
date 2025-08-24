@@ -4,6 +4,8 @@
 
 enum { DISPLAY_TEXT = 0, DISPLAY_STEPS = 1, DISPLAY_SLEEP = 2 };
 
+enum { DISPLAY_TAP = 0, DISPLAY_ALWAYS = 1, DISPLAY_NEVER = 2 };
+
 enum {
   CREATURE_BEAGLE = 0,
   CREATURE_COW = 1,
@@ -16,7 +18,9 @@ enum {
   CREATURE_TERRIER = 8,
   CREATURE_BUNNY = 9,
   CREATURE_AXOLOTL = 10,
-  CREATURE_LOBSTER = 11
+  CREATURE_LOBSTER = 11,
+  CREATURE_HEDGEHOG = 12,
+  CREATURE_TURTLE = 13
 };
 
 typedef struct {
@@ -31,6 +35,8 @@ typedef struct {
   int creature;
   int display;
   char display_text[10];
+  int display_state;
+  char date_format[6];
 } AppConfig;
 
 void config_load(AppConfig *config);

@@ -15,7 +15,7 @@ static void canvas_update_proc(Layer *layer, GContext *ctx) {
   if (bounds.size.h != obstructed.size.h) {
     s_lasagna = GRect(obstructed.size.w - 90, obstructed.size.h - 44, 90, 44);
   } else {
-    s_lasagna = GRect(bounds.size.w - 90, bounds.size.h - 64, 90, 64);
+    s_lasagna = GRect(bounds.size.w - PBL_IF_RECT_ELSE(90, 112), bounds.size.h - 64, 90, 64);
   }
 
   time_t now = time(NULL);
@@ -29,7 +29,9 @@ static void canvas_update_proc(Layer *layer, GContext *ctx) {
 
   // Date
   char date_buffer[6];
-  strftime(date_buffer, 6, "%m/%d", t);
+  char date_format_buffer[6] = "%m/%d\0";
+  strncpy(date_format_buffer, s_config->date_format, sizeof(s_config->date_format));
+  strftime(date_buffer, 6, date_format_buffer, t);
   GFont small_leco = fonts_get_system_font(FONT_KEY_LECO_20_BOLD_NUMBERS);
   GRect date_bounds =
       GRect(0, (obstructed.size.h / 2) - 43, (obstructed.size.w / 2) + 13, 26);
@@ -73,7 +75,7 @@ static void canvas_update_proc(Layer *layer, GContext *ctx) {
   draw_creature_layer(ctx, creatures[s_config->creature][3], s_config->color_4, s_lasagna.origin);
   draw_creature_layer(ctx, creatures[s_config->creature][4], s_config->color_5, s_lasagna.origin);
 
-  if (s_tapped) {
+  if (s_config->display_state != DISPLAY_NEVER && (s_tapped || s_config->display_state == DISPLAY_ALWAYS)) {
     GDrawCommandImage *bubble_image =
         gdraw_command_image_create_with_resource(RESOURCE_ID_IMAGE_BUBBLE);
     draw_command_image_in_color(bubble_image, s_config->color_0_contrast);

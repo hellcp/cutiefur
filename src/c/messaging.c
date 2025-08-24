@@ -12,7 +12,9 @@ static void inbox_received_callback(DictionaryIterator *iter, void *context) {
   Tuple *color_5_t = dict_find(iter, MESSAGE_KEY_ColorFive);
   Tuple *creature_t = dict_find(iter, MESSAGE_KEY_Creature);
   Tuple *display_t = dict_find(iter, MESSAGE_KEY_Display);
+  Tuple *display_state_t = dict_find(iter, MESSAGE_KEY_DisplayState);
   Tuple *display_text_t = dict_find(iter, MESSAGE_KEY_DisplayText);
+  Tuple *date_format_t = dict_find(iter, MESSAGE_KEY_DateFormat);
 
   if (color_0_t) {
     s_config->color_0 = GColorFromHEX(color_0_t->value->int32);
@@ -38,10 +40,18 @@ static void inbox_received_callback(DictionaryIterator *iter, void *context) {
   if (display_t) {
     s_config->display = atoi(display_t->value->cstring);
   }
+  if (display_state_t) {
+    s_config->display_state = atoi(display_state_t->value->cstring);
+  }
   if (display_text_t) {
-    strncpy(s_config->display_text, display_text_t->value->cstring, 
+    strncpy(s_config->display_text, display_text_t->value->cstring,
             sizeof(s_config->display_text) - 1);
     s_config->display_text[sizeof(s_config->display_text) - 1] = '\0';
+  }
+  if (date_format_t) {
+    strncpy(s_config->date_format, date_format_t->value->cstring,
+            sizeof(s_config->date_format) - 1);
+    s_config->date_format[sizeof(s_config->date_format) - 1] = '\0';
   }
 
   s_config->color_0_contrast = gcolor_legible_over(s_config->color_0);

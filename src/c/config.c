@@ -10,7 +10,9 @@ void config_load(AppConfig *config) {
   config->color_5 = GColorBlack;
   config->creature = CREATURE_SHARK;
   config->display = DISPLAY_TEXT;
+  config->display_state = 0;
   snprintf(config->display_text, 5, "RAWR");
+  snprintf(config->date_format, 7, "%%m/%%d");
 
   // Load colors from storage if available
   if (persist_exists(MESSAGE_KEY_ColorZero)) {
@@ -45,8 +47,16 @@ void config_load(AppConfig *config) {
     config->display = persist_read_int(MESSAGE_KEY_Display);
   }
 
+  if (persist_exists(MESSAGE_KEY_DisplayState)) {
+    config->display_state = persist_read_int(MESSAGE_KEY_DisplayState);
+  }
+
   if (persist_exists(MESSAGE_KEY_DisplayText)) {
     persist_read_string(MESSAGE_KEY_DisplayText, config->display_text, 9);
+  }
+
+  if (persist_exists(MESSAGE_KEY_DateFormat)) {
+    persist_read_string(MESSAGE_KEY_DateFormat, config->date_format, 5);
   }
 
   config->color_0_contrast = gcolor_legible_over(config->color_0);
