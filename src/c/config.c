@@ -56,7 +56,7 @@ void config_load(AppConfig *config) {
   }
 
   if (persist_exists(MESSAGE_KEY_DateFormat)) {
-    persist_read_string(MESSAGE_KEY_DateFormat, config->date_format, 5);
+    persist_read_string(MESSAGE_KEY_DateFormat, config->date_format, 6);
   }
 
   config->color_0_contrast = gcolor_legible_over(config->color_0);
@@ -74,5 +74,6 @@ void config_save(AppConfig *config) {
   persist_write_int(MESSAGE_KEY_Display, config->display);
   persist_write_int(MESSAGE_KEY_DisplayState, config->display_state);
   persist_write_string(MESSAGE_KEY_DisplayText, config->display_text);
+  persist_write_string(MESSAGE_KEY_DateFormat, config->date_format);
 }
 
